@@ -1,6 +1,5 @@
 import React from "react";
 import ExplorerPanel from "./panels/Explorer";
-import SearchPanel from "./panels/Search";
 import SourceControlPanel from "./panels/SourceControl";
 import DebugPanel from "./panels/Debug";
 import ExtensionsPanel from "./panels/Extension";
