@@ -15,28 +15,32 @@ function getFileIcon(filename) {
     case 'js':   return <img src={JsIcon} alt="JS" width={20} />;
     case 'jsx':  return <img src={ReactIcon} alt="React" width={20} />;
     case 'jsx':  return <img src={ReactIcon} alt="React" width={20} />;
-    case 'md':  return <img src={MdIcon} alt="Md" width={20} style={{ color: "green" }}/>;
+    case 'md':  return <img src={MdIcon} alt="Md" width={20}/>;
 
     // etc.
-    default:     return <img src= "📁" />;
+    default:     return   <span style={{ marginRight: 5, fontSize: 15 }}>{"📁"}</span>
   }
 }
 
-export default function ExplorerPanel() {
+export default function ExplorerPanel({ open }) {
   return (
     <aside className="side-panel explorer">
-      <h4 className="panel-title">Explorer</h4>
+      <h4  className="panel-title" style={{ borderBottom: "1px solid #444", paddingBottom: 8 }}>Explorer</h4>
       <ul className="explorer-list">
         {tabsData.map(item =>
           item.name === "portfolio" ? (
-            <li key="portfolio" className="folder" style={{ display: "flex", alignItems: "center", userSelect: "none", padding: "3px 6px", color: "#c0c0c0", fontWeight: "bold" }}>
-              <span className="codicon codicon-chevron-down" style={{ color: "#bcbcbc", fontSize: 15, marginRight: 1 }} />
-              {/* <img src={FolderIcon} alt="folder" width={18} style={{ marginRight: 6 }} /> */}
+            <li key="portfolio" className="folder" /* ...STYLE... */>
+              <span className="codicon codicon-chevron-down" /* ... */ />
               <span style={{ marginRight: 5, fontSize: 15 }}>{"📁"}</span>
               <span>{item.name}</span>
             </li>
           ) : (
-            <li key={item.id} className="file" style={{ display: "flex", alignItems: "center", cursor: "pointer", paddingLeft: "28px" }}>
+            <li
+              key={item.id}
+              className="file"
+              style={{ display: "flex", alignItems: "center", cursor: "pointer", paddingLeft: "28px" }}
+              onClick={() => open(item.id)} // <=== AJOUT FONDAMENTAL
+            >
               {getFileIcon(item.name)}
               <span style={{ marginLeft: 6 }}>{item.name}</span>
             </li>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import VsCodeTitleBar from "./components/TitleBar";
 import ActivityBar from "./components/ActivityBar";
 import SidePanel from "./components/SidePanel";
 import TabsBar from "./components/TabsBar";
@@ -50,9 +51,10 @@ export default function App() {
 
   return (
     <div className="vscode-root">
-      <ActivityBar active={panel} setActive={setPanel} />
-      <SidePanel   panel={panel} open={openTab} />
-
+      <VsCodeTitleBar />
+      <div className="vscode-main-content">
+        <ActivityBar active={panel} setActive={setPanel} />
+        <SidePanel   panel={panel} open={openTab} />
       <div className="main">
         <TabsBar
           tabs={tabs}
@@ -62,6 +64,7 @@ export default function App() {
         />
         <TabContent tab={currentTab} open={openTab} />
         <StatusBar />
+        </div>
       </div>
     </div>
   );

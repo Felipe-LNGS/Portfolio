@@ -1,5 +1,19 @@
 body, html, #root { height:100%; margin:0; }
-.vscode-root { display:flex; height:100%; font-family:'Cascadia Code',monospace; background:#1e1e1e; color:#ccc; }
+.vscode-root { display:flex; flex-direction:column;height:100%; font-family:'Cascadia Code'; background:#1e1e1e; color:#ccc; }
+.vscode-main-content {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0; /* Pour éviter les overflow descendants */
+}
+
+/* .main = la colonne principale de VS Code */
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  background: #262626;
+  min-width: 0;
+}
 .activity-bar { width:48px; background:#333; display:flex; flex-direction:column; }
 /* .activity-bar button { background:none; border:none; color:#bd1414; font-size:20px; padding:16px 0; cursor:pointer; } */
 .activity-bar .active { color:#fff; border-left:2px solid #007acc; }

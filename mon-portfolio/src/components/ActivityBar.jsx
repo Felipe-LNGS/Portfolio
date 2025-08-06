@@ -1,9 +1,9 @@
 import React from "react";
 
 const items = [
-  { id: "explorer",  iconClass: "codicon-folder" },
-  { id: "skills",    iconClass: "codicon-bug" },
-  { id: "github",    iconClass: "codicon-github" },
+  { id: "explorer",  iconClass: "codicon-files" },
+  { id: "skills",    iconClass: "codicon-code" },
+  { id: "github",    iconClass: "codicon-github-alt" },
   { id: "profil",    iconClass: "codicon-account" },
   { id: "settings",  iconClass: "codicon-gear" },
 ];

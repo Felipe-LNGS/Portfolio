@@ -1,7 +1,7 @@
 import React from "react";
 import ExplorerPanel from "./panels/Explorer";
-import DebugPanel from "./panels/Debug";
-import ExtensionsPanel from "./panels/Extension";
+import DebugPanel from "./panels/Skills";
+import ExtensionsPanel from "./panels/Github";
 import AccountsPanel from "./panels/Accounts";
 import SettingsPanel from "./panels/Settings";
 

@@ -23,6 +23,7 @@ export default function DebugPanel() {
 
   return (
     <aside className="side-panel debug">
+      <h4  className="panel-title" style={{ borderBottom: "1px solid #444", paddingBottom: 8 }} >Skills </h4>
       {sections.map((sec) => (
         <div key={sec.title} className="skill-section">
           <h4 className="panel-title">{sec.title}</h4>
