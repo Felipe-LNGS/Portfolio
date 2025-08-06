@@ -13,10 +13,7 @@ export default function AccountsPanel() {
         <li>📧 dev@mail.com</li>
         <li>📍 Paris, France</li>
       </ul>
-      <div className="social">
-        <a href="#"><span>🐙 GitHub</span></a>
-        <a href="#"><span>💼 LinkedIn</span></a>
-      </div>
+
     </aside>
   );
 }

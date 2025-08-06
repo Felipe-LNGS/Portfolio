@@ -1,36 +1,10 @@
+
+
 export const tabsData = [
-  {
-    id: "home",
-    name: "Home",
-    icon: "🏠",
-    type: "home"          // ce type déclenchera Home.jsx
-  },
-  {
-    id: "about",
-    name: "about.js",
-    icon: "📄",
-    type: "code",
-    content: `// À propos de moi\nconst dev = {...};`
-  },
-  {
-    id: "skills",
-    name: "skills.css",
-    icon: "🎨",
-    type: "code",
-    content: `/* Mes compétences */`
-  },
-  {
-    id: "projects",
-    name: "projects.py",
-    icon: "🐍",
-    type: "code",
-    content: `# Mes projets`
-  },
-  {
-    id: "contact",
-    name: "contact.md",
-    icon: "📧",
-    type: "code",
-    content: `# Contactez-moi`
-  },
+  { name: "portfolio", icon: "📁" },  // purement visuel
+  { id: "home", name: "home.html", type: "home" },
+  { id: "about", name: "about.js", type: "code" },
+  { id: "skills", name: "skills.css", type: "code" },
+  { id: "projects", name: "projects.jsx", type: "code" },
+  { id: "contact", name: "contact.md", type: "code" }
 ];

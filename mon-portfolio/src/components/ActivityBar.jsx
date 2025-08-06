@@ -1,24 +1,24 @@
 import React from "react";
+
 const items = [
-  { id: "explorer", label: "📁" },
-  { id: "source", label: "🌿" },
-  { id: "debug", label: "🐛" },
-  { id: "extensions", label: "📦" },
-  { id: "accounts", label: "👤" },
-  { id: "settings", label: "⚙️" },
+  { id: "explorer",  iconClass: "codicon-folder" },
+  { id: "skills",    iconClass: "codicon-bug" },
+  { id: "github",    iconClass: "codicon-github" },
+  { id: "profil",    iconClass: "codicon-account" },
+  { id: "settings",  iconClass: "codicon-gear" },
 ];
 
 export default function ActivityBar({ active, setActive }) {
   return (
     <nav className="activity-bar">
-      {items.map((it) => (
+      {items.map(item => (
         <button
-          key={it.id}
-          className={active === it.id ? "active" : ""}
-          onClick={() => setActive(it.id)}
-          title={it.id}
+          key={item.id}
+          className={active === item.id ? "active" : ""}
+          onClick={() => setActive(item.id)}
+          title={item.id}
         >
-          {it.label}
+          <span className={`codicon ${item.iconClass}`} />
         </button>
       ))}
     </nav>

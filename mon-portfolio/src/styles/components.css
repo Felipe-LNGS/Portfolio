@@ -33,15 +33,7 @@
 .contact-list li:hover {
   background: #2a2d2e;
 }
-.search-input {
-  width: 100%;
-  padding: 6px;
-  margin-bottom: 8px;
-  background: #1e1e1e;
-  border: 1px solid #3c3c3c;
-  border-radius: 4px;
-  color: #ccc;
-}
+
 .preview {
   font-size: 11px;
   color: #888;
@@ -100,4 +92,51 @@
   list-style: disc inside;
   margin: 0;
   padding: 0;
+}
+
+.activity-bar button {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* size: 54px; */
+
+}
+.activity-bar .codicon[class*='codicon-'] {
+    /* font: normal normal normal 16px / 1 codicon; */
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+
+.explorer-list, .nested {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
+}
+.folder-header:hover {
+  background-color: rgba(0, 122, 204, 0.10);
+  border-radius: 4px;
+}
+.nested { padding-left: 18px; }
+.file:hover {
+  background-color: #252526;
+  border-radius: 4px;
+}
+
+.li .file{
+  margin-left: 100px;
 }

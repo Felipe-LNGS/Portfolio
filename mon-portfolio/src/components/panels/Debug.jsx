@@ -3,17 +3,20 @@ import React from "react";
 export default function DebugPanel() {
   const sections = [
     {
-      title: "Maîtrisé",
+      title: "Confirmé",
       items: [
-        { name: "C/C++", level: 90 },
-        { name: "Git", level: 80 },
+        { name: "C/C++", level: 82 },
+        { name: "Git", level: 76 },
       ],
     },
     {
       title: "Apprentissage",
       items: [
-        { name: "React", level: 55 },
-        { name: "Django", level: 45 },
+        { name: "React", level: 45 },
+        { name: "Html", level: 62 },
+        { name: "Css", level: 58 },
+        { name: "Javascript/Node.js", level: 42 },
+        { name: "Sql", level: 32 },
       ],
     },
   ];

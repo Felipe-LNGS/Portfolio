@@ -8,9 +8,10 @@ import { tabsData } from "./data/portfolioData";
 import "./styles/App.css";
 import "./styles/components.css";
 import "./styles/home.css";
-
+import '@vscode/codicons/dist/codicon.css';
 
 export default function App() {
+
   // On récupère les configs
   const homeTab = tabsData.find(t => t.id === "home");
 
