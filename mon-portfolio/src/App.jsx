@@ -14,12 +14,12 @@ import '@vscode/codicons/dist/codicon.css';
 export default function App() {
 
   // On récupère les configs
-  const homeTab = tabsData.find(t => t.id === "home");
+  const homeTab = tabsData.find(t => t.id === "Home");
 
   // Home ouvert par défaut
-  const [tabs, setTabs]     = useState([homeTab]);
+  const [tabs, setTabs] = useState([homeTab]);
   const [active, setActive] = useState(homeTab.id);
-  const [panel, setPanel]   = useState("explorer");
+  const [panel, setPanel] = useState("explorer");
 
   const openTab = id => {
     const tab = tabsData.find(t => t.id === id);
@@ -54,16 +54,16 @@ export default function App() {
       <VsCodeTitleBar />
       <div className="vscode-main-content">
         <ActivityBar active={panel} setActive={setPanel} />
-        <SidePanel   panel={panel} open={openTab} />
-      <div className="main">
-        <TabsBar
-          tabs={tabs}
-          active={active}
-          setActive={setActive}
-          close={closeTab}
-        />
-        <TabContent tab={currentTab} open={openTab} />
-        <StatusBar />
+        <SidePanel panel={panel} open={openTab} />
+        <div className="main">
+          <TabsBar
+            tabs={tabs}
+            active={active}
+            setActive={setActive}
+            close={closeTab}
+          />
+          <TabContent tab={currentTab} open={openTab} />
+          <StatusBar />
         </div>
       </div>
     </div>

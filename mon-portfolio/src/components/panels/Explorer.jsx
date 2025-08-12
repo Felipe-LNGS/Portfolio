@@ -14,10 +14,8 @@ function getFileIcon(filename) {
     case 'css':  return <img src={CssIcon} alt="CSS" width={20} />;
     case 'js':   return <img src={JsIcon} alt="JS" width={20} />;
     case 'jsx':  return <img src={ReactIcon} alt="React" width={20} />;
-    case 'jsx':  return <img src={ReactIcon} alt="React" width={20} />;
     case 'md':  return <img src={MdIcon} alt="Md" width={20}/>;
 
-    // etc.
     default:     return   <span style={{ marginRight: 5, fontSize: 15 }}>{"📁"}</span>
   }
 }
