@@ -1,0 +1,80 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #161616 0%, #1f1f1f 100%);
+  padding: 80px 20px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 20px;
+  margin-left: 50px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-left h2 {
+  font-size: 2.5rem;
+  margin: 8px 0 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero-left p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 520px;
+  color: #ccc;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-buttons button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007acc, #005f99);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 122, 204, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #61dafb;
+  border: 2px solid #61dafb;
+}
+
+.btn-secondary:hover {
+  background: #61dafb;
+  color: #1f1f1f;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(97, 218, 251, 0.4);
+}
+
+
