@@ -21,7 +21,8 @@ export default function About() {
   style={{
     display: "inline-block",
     padding: "10px 20px",
-    background: "#57a6ff",
+    background: "rgb(0 122 204)",
+    marginLeft:"auto",
     color: "#fff",
     borderRadius: "6px",
     textDecoration: "none"

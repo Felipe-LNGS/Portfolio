@@ -8,9 +8,10 @@ export default defineConfig(({ mode }) => {
 
     // Options du serveur de développement
     server: {
-      port: 3042,           // port de dev (par défaut 5173)
+      port: 3042,   
+      host: '0.0.0.0',        // port de dev (par défaut 5173)
       strictPort: true,     // échoue si le port est déjà utilisé
-      open: true,           // ouvre automatiquement le navigateur
+      open: false,           // ouvre automatiquement le navigateur
 
       // Active le HMR (true par défaut)
       hmr: {
