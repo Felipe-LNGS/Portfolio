@@ -1,7 +1,10 @@
-FROM node:24
+FROM node:24 AS builder
 WORKDIR /app
-RUN apt-get update && apt-get install -y xdg-utils
 COPY package*.json ./
 RUN npm install --legacy-peer-deps
 COPY . .
-CMD ["npm", "run", "dev"]
+RUN npm run build
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

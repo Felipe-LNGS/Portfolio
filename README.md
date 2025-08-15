@@ -28,6 +28,7 @@ L’objectif est de proposer une expérience utilisateur originale tout en démo
 
 1. Cloner le dépôt
 2. Entrer dans le dossier Portfolio
-3. Lancer la commance : npm run dev
+3. Lancer la commande : docker compose up --build -d
+4. Arreter les docker : docker compose down
 
 
