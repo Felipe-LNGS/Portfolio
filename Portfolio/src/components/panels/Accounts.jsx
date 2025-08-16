@@ -3,7 +3,7 @@ import LinkIcon from '../../assets/icons/linkedin.svg';
 
 export default function AccountsPanel() {
   return (
-    <aside className="side-panel accounts">
+    <div className="account-panel-content">
       <h4  className="panel-title" style={{ borderBottom: "1px solid #444", paddingBottom: 8 }}>Accounts</h4>
       <div className="profile" style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 24 }}>
         <span className="avatar" style={{ fontSize: 56, marginBottom: 8 }}>👨‍💻</span>
@@ -33,6 +33,6 @@ export default function AccountsPanel() {
                   style={{ width: 20, height: 20}}
                 /></a>
       </div>
-    </aside>
+    </div>
   );
 }

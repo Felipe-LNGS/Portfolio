@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export default function DebugPanel() {
@@ -22,7 +23,7 @@ export default function DebugPanel() {
   ];
 
   return (
-    <aside className="side-panel debug">
+    <div className="debug-panel-content">
       <h4  className="panel-title" style={{ borderBottom: "1px solid #444", paddingBottom: 8 }} >Skills </h4>
       {sections.map((sec) => (
         <div key={sec.title} className="skill-section">
@@ -40,6 +41,6 @@ export default function DebugPanel() {
           ))}
         </div>
       ))}
-    </aside>
+    </div>
   );
 }

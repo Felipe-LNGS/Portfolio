@@ -48,43 +48,6 @@
   height: 100%;
   transition: width .3s;
 }
-/* .extension-item {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 12px;
-} */
-/* .extension-item .icon {
-  font-size: 18px;
-} */
-/* .extension-item .desc {
-  font-size: 11px;
-  color: #888;
-} */
-/* .accounts .avatar {
-  font-size: 32px;
-} */
-/* .accounts .status {
-  font-size: 11px;
-  color: #6a9955;
-} */
-/* .accounts .social a {
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 14px;
-  color: #ccc;
-  text-decoration: none;
-} */
-/* .accounts .social a:hover {
-  color: #007acc;
-} */
-/* .settings section {
-  margin-bottom: 12px;
-} */
-/* .settings ul {
-  list-style: disc inside;
-  margin: 0;
-  padding: 0;
-} */
 
 .activity-bar button {
   background: none;
@@ -102,26 +65,45 @@
     color: #ffffff;
 }
 
-
-/* .explorer-list, .nested {
-  list-style: none;
-  padding-left: 10px;
-  margin: 0;
-} */
-/* .folder-header:hover {
-  background-color: rgba(0, 122, 204, 0.10);
-  border-radius: 4px;
-} */
-/* .nested { padding-left: 18px; } */
-/* .file:hover {
-  background-color: #252526;
-  border-radius: 4px;
-} */
-
 .li .file{
   margin-left: 100px;
 }
 
 .skill-section{
   margin-top: 30px;
+}
+.side-panel-header button:hover {
+  color: #fff;
+}
+
+/* --------------------------- */
+/* Responsive mobile drawer */
+/* --------------------------- */
+
+@media (max-width: 768px) {
+  .side-panel {
+    display: none;
+  }
+  .side-panel.open {
+    display: block;
+    z-index: 10;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    width: 80%;
+    height: calc(100% - 48px);
+    padding: 12px;
+    background: #252526;
+    overflow-y: auto;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    animation: slideIn 0.3s forwards ease-out;
+  }
+    .activity-bar .active {
+    color: #fff;
+    border-left: 2px solid #007acc;
+}
+  @keyframes slideIn {
+    to { transform: translateX(0); }
+  }
 }

@@ -14,8 +14,12 @@ export default function ActivityBar({ active, setActive }) {
       {items.map(item => (
         <button
           key={item.id}
-          className={active === item.id ? "active" : ""}
-          onClick={() => setActive(item.id)}
+
+        className={active === item.id ? "active" : ""}
+        onClick={() => {
+          if (active === item.id) setActive(null);
+          else setActive(item.id);
+        }}
           title={item.id}
         >
           <span className={`codicon ${item.iconClass}`} />
@@ -24,3 +28,4 @@ export default function ActivityBar({ active, setActive }) {
     </nav>
   );
 }
+

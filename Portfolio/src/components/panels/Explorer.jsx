@@ -22,7 +22,7 @@ function getFileIcon(filename) {
 
 export default function ExplorerPanel({ open }) {
   return (
-    <aside className="side-panel explorer">
+    <div className="explorer-panel-content">
       <h4  className="panel-title" style={{ borderBottom: "1px solid #444", paddingBottom: 8 }}>Explorer</h4>
       <ul className="explorer-list">
         {tabsData.map(item =>
@@ -45,6 +45,6 @@ export default function ExplorerPanel({ open }) {
           )
         )}
       </ul>
-    </aside>
+    </div>
   );
 }

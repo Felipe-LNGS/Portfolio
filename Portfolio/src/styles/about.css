@@ -6,13 +6,25 @@
     box-Sizing: border-box;
     padding: 20px;
 }
-
-.about-profil{
+.about-profil {
     display: flex;
     align-items: center;
-    margin-Bottom: 44px;
+    margin-bottom: 44px;
     margin-left: 30px;
+}
 
+/* Responsive : sur mobile, passe en colonne */
+@media (max-width: 640px) {
+    .about-profil {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        gap: 16px;
+    }
+    
+    .about-section {
+        padding: 16px;
+    }
 }
 
 .about-profil img{  

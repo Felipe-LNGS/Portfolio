@@ -2,8 +2,8 @@ import Github from '../../assets/icons/github.svg';
 
 export default function ActivityBar() {
   return (
-    <aside
-      className="side-panel settings"
+    <div
+      className="github-panel-content"
       style={{textAlign: "center"}}
     >
       <h4  className="panel-title" style={{ borderBottom: "1px solid #444", paddingBottom: 8, textAlign:'left'}} >GitHub
@@ -50,6 +50,6 @@ export default function ActivityBar() {
       }}>
         github.com/Felipe-LNGS
       </div>
-    </aside>
+    </div>
   );
 }
