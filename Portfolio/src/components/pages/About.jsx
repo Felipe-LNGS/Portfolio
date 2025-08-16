@@ -6,7 +6,6 @@ import React from "react";
 export default function About() {
   return (
     <div className="about-section">
-      {/* Garde about-profil mais ajoute flex responsive */}
       <div className="about-profil flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-0">
         <img
           src="https://avatars.githubusercontent.com/u/1234567?v=4"

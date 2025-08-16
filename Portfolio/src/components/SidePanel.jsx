@@ -6,10 +6,8 @@ import AccountsPanel from "./panels/Accounts";
 import SettingsPanel from "./panels/Settings";
 
 export default function SidePanel({ panel, open, className }) {
-  // Si aucun panel sélectionné, on n'affiche rien
   if (!panel) return null;
 
-  // Détermine quel composant rendre
   let Content;
   switch (panel) {
   case "explorer": Content = <ExplorerPanel open={open} />;; break;
@@ -20,7 +18,6 @@ export default function SidePanel({ panel, open, className }) {
   }
 
   return (
-    // On applique bien la className (incluant "side-panel open")
     <div className={className}>
       {Content}
     </div>

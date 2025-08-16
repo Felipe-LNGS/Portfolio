@@ -27,8 +27,8 @@ export default function ExplorerPanel({ open }) {
       <ul className="explorer-list">
         {tabsData.map(item =>
           item.name === "portfolio" ? (
-            <li key="portfolio" className="folder" /* ...STYLE... */>
-              <span className="codicon codicon-chevron-down" /* ... */ />
+            <li key="portfolio" className="folder">
+              <span className="codicon codicon-chevron-down"/>
               <span style={{ marginRight: 5, fontSize: 15 }}>{"📁"}</span>
               <span>{item.name}</span>
             </li>
@@ -37,7 +37,7 @@ export default function ExplorerPanel({ open }) {
               key={item.id}
               className="file"
               style={{ display: "flex", alignItems: "center", cursor: "pointer", paddingLeft: "28px" }}
-              onClick={() => open(item.id)} // <=== AJOUT FONDAMENTAL
+              onClick={() => open(item.id)} 
             >
               {getFileIcon(item.name)}
               <span style={{ marginLeft: 6 }}>{item.name}</span>
