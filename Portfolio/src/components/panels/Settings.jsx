@@ -4,7 +4,7 @@ export default function SettingsPanel() {
   const date = new Date().toLocaleDateString();
 
   return (
-    <div className="settings-panel-content" style={{ color: "#ccc", fontFamily: "'Cascadia Code', monospace" }}>
+    <div className="settings-panel-content" style={{ color: "#ccc"}}>
       <h4 className="panel-title" style={{ borderBottom: "1px solid #444", paddingBottom: 8 }}>
         Settings
       </h4>
@@ -18,7 +18,7 @@ export default function SettingsPanel() {
         <h5 style={{ color: "#888", marginBottom: 8 }}>Préférences</h5>
         <ul style={{ paddingLeft: 20, fontSize: 14, listStyle: "disc" }}>
           <li>Thème : VS Code Dark</li>
-          <li>Police : Cascadia Code</li>
+          <li>Police : Poppins</li>
         </ul>
       </section>
     </div>

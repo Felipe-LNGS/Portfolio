@@ -33,10 +33,9 @@ export default function Contact() {
       className="fadeInUp"
       style={{
         padding: 24,
-        fontFamily: "'Segoe UI', Tahoma, Verdana, sans-serif",
         color: "#e7e7e7",
         background: "linear-gradient(135deg, #161616 0%, #1f1f1f 100%)",
-        height: "100%",
+        height: "87vh",
         boxSizing: "border-box",
         overflowY: "auto"
       }}

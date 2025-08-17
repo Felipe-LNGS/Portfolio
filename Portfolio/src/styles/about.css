@@ -1,11 +1,12 @@
-.about-section{
+.about-section {
     padding: 24px;
     color: #e7e7e7;
     background: linear-gradient(135deg, #161616 0%, #1f1f1f 100%);
-    height: 100%;
+    height: 87vh;
     box-Sizing: border-box;
     padding: 20px;
 }
+
 .about-profil {
     display: flex;
     align-items: center;
@@ -21,13 +22,13 @@
         margin-left: 10px;
         gap: 16px;
     }
-    
+
     .about-section {
         padding: 16px;
     }
 }
 
-.about-profil img{  
+.about-profil img {
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -35,12 +36,13 @@
     border: 2px solid #3c3c3c;
 }
 
-.about-section h2{
+.about-section h2 {
     font-size: 20px;
     margin-bottom: 12px;
     border-bottom: 1px solid #333;
     padding-bottom: 6px;
 }
+
 .about-section ul {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +52,7 @@
     margin: 0px;
 }
 
-.about-section li{
+.about-section li {
     background-color: #2a2a2a;
     padding: 6px 12px;
     border-radius: 4px;

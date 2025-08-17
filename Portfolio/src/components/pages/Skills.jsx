@@ -2,7 +2,8 @@
 import React from "react";
 
 const skillsData = [
-  { category: "Front-End", items: [
+  {
+    category: "Front-End", items: [
       { name: "React", level: 2 },
       { name: "HTML5", level: 3 },
       { name: "JavaScript", level: 2 },
@@ -11,14 +12,16 @@ const skillsData = [
       { name: "Bootstrap", level: 2 },
     ]
   },
-  { category: "Back-End", items: [
+  {
+    category: "Back-End", items: [
       { name: "Node.js", level: 2 },
       { name: "Express", level: 2 },
       { name: "MySQL", level: 1 },
 
     ]
   },
-  { category: "Outils", items: [
+  {
+    category: "Outils", items: [
       { name: "Git & GitHub", level: 4 },
       { name: "Figma", level: 1 },
       { name: "Docker", level: 2 },
@@ -53,13 +56,13 @@ export default function Skills({ open }) {
         padding: 24,
         color: "#e7e7e7",
         background: "linear-gradient(135deg, #161616 0%, #1f1f1f 100%)",
-        height: "100%",
+        height: "87vh",
         boxSizing: "border-box",
       }}
     >
-<header style={{ textAlign: "center", marginBottom: 32 }}>
-  <h1 style={{ margin: 0, fontSize: 30 }}>Mes Compétences</h1>
-</header>
+      <header style={{ textAlign: "center", marginBottom: 32 }}>
+        <h1 style={{ margin: 0, fontSize: 30 }}>Mes Compétences</h1>
+      </header>
       <div
         style={{
           display: "grid",
@@ -102,7 +105,7 @@ export default function Skills({ open }) {
           </section>
         ))}
       </div>
-<footer style={{ textAlign: "center", marginTop: 40 }}>
+      <footer style={{ textAlign: "center", marginTop: 40 }}>
         <button
           onClick={() => open("Projects")}
           style={{

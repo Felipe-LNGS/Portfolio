@@ -24,12 +24,12 @@ const projects = [
     link: "https://github.com/ft-Ali/ft_matcha"
   },
   {
-  id: "proj3",
-  title: "Ft_Transcendance",
-  image: TranscendenceImg,
-  description:  "Plateforme web Django inspirée du projet Transcendance (42) : Pong multijoueur en temps réel, chat intégré et authentification sécurisée (OAuth2), avec base PostgreSQL.",
-  tech: ["Python", "Django", "PostgreSQL", "JavaScript", "WebSockets", "Docker"],
-  link: "https://github.com/Felipe-LNGS/Transcendence"
+    id: "proj3",
+    title: "Ft_Transcendance",
+    image: TranscendenceImg,
+    description: "Plateforme web Django inspirée du projet Transcendance (42) : Pong multijoueur en temps réel, chat intégré et authentification sécurisée (OAuth2), avec base PostgreSQL.",
+    tech: ["Python", "Django", "PostgreSQL", "JavaScript", "WebSockets", "Docker"],
+    link: "https://github.com/Felipe-LNGS/Transcendence"
 
   },
   // Ajoute ici d'autres projets...
@@ -42,7 +42,7 @@ export default function Projects({ open }) {
         padding: 24,
         color: "#e7e7e7",
         background: "linear-gradient(135deg, #161616 0%, #1f1f1f 100%)",
-        height: "100%",
+        height: "87vh",
         boxSizing: "border-box",
         overflowY: "auto"
       }}
