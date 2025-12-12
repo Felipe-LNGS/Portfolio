@@ -20,7 +20,7 @@ export default function About() {
         </div>
         
         <a 
-          href="/CV_PHILIPPE_LANGLOIS.pdf" 
+          href="/Cv_Philippe Langlois.pdf" 
           download 
           style={{
             display: "inline-block",
