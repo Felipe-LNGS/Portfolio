@@ -1,0 +1,10 @@
+services:
+  portfolio:
+    build: .
+    ports:
+      - "3042:3042"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - VITE_DEV=true
