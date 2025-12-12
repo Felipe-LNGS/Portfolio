@@ -18,7 +18,14 @@ export default function Contact() {
     const templateID = "template_i7ga7pn";
     const userID = "tQVDWhX8FGVoZHQD1";
 
-    emailjs.send(serviceID, templateID, form, userID)
+    // Ajouter les champs reply_to et from_name pour meilleure délivrabilité
+    const emailData = {
+      ...form,
+      reply_to: form.email,
+      from_name: form.name
+    };
+
+    emailjs.send(serviceID, templateID, emailData, userID)
       .then(() => {
         setStatus("Envoyé ! Merci de votre message.");
         setForm({ name: "", email: "", message: "" });

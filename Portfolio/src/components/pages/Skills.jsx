@@ -8,8 +8,8 @@ const skillsData = [
       { name: "HTML5", level: 3 },
       { name: "JavaScript", level: 2 },
       { name: "CSS3", level: 3 },
-      { name: "Tailwind", level: 3 },
-      { name: "Bootstrap", level: 2 },
+      { name: "Tailwind", level: 2 },
+      { name: "Bootstrap", level: 1 },
     ]
   },
   {

@@ -47,6 +47,7 @@ export default function App() {
         <SidePanel
           panel={panel}
           open={openTab}
+          setPanel={setPanel}
           className={`side-panel${panel ? " open" : ""}`}
         />
 
@@ -56,6 +57,7 @@ export default function App() {
             active={active}
             setActive={setActive}
             close={closeTab}
+            setPanel={setPanel}
           />
           <TabContent tab={currentTab} open={openTab} />
           <StatusBar />
